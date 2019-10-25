@@ -2,3 +2,9 @@ language: cpp
 compiler:
   - clang++
   - g++
+
+script:
+  - clang++ test.cpp -o testclang
+  - g++ test.cpp -o testg++
+  - ./testclang
+  - ./testg++
